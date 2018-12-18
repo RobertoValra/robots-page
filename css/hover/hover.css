@@ -1,0 +1,161 @@
+/* *, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; } // required */
+.grid {
+	position: relative;
+	clear: both;
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	max-width: 1000px;
+	list-style: none;
+	text-align: center;
+}
+
+/* Common style */
+.grid .effect-ming {
+	position: relative;
+	overflow: hidden;
+	margin: 10px 1%;
+	min-width: 320px;
+	max-width: 480px;
+	max-height: 360px;
+	width: 48%;
+	height: auto;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid .effect-ming img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.grid .effect-ming .figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid .effect-ming .figcaption::before,
+.grid .effect-ming .figcaption::after {
+	pointer-events: none;
+}
+
+.grid .effect-ming .figcaption,
+.grid .effect-ming .figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+.grid .effect-ming .figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid .effect-ming h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid .effect-ming h2 span {
+	font-weight: 800;
+}
+
+.grid .effect-ming h2,
+.grid .effect-ming p {
+	margin: 0;
+}
+
+.grid .effect-ming p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+
+
+/*---------------*/
+/***** Ming *****/
+/*---------------*/
+
+.effect-ming.effect-ming {
+	background: #030c17;
+}
+
+.effect-ming.effect-ming img {
+	opacity: 0.9;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+.effect-ming.effect-ming .figcaption::before {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	border: 2px solid #fff;
+	box-shadow: 0 0 0 30px rgba(255,255,255,0.2);
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale3d(1.4,1.4,1);
+	transform: scale3d(1.4,1.4,1);
+}
+
+.effect-ming.effect-ming h2 {
+	margin: 0% 0 10px 0;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+.effect-ming.effect-ming p {
+	padding: 1em;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+.effect-ming.effect-ming:hover h2 {
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+.effect-ming.effect-ming:hover .figcaption::before,
+.effect-ming.effect-ming:hover p {
+	opacity: 1;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+
+.effect-ming.effect-ming:hover .figcaption {
+	background-color: rgba(58,52,42,0);
+}
+
+.effect-ming.effect-ming:hover img {
+	opacity: 0.4;
+}
+
+/* Media queries */
+@media screen and (max-width: 50em) {
+	.grid .effect-ming {
+		display: inline-block;
+		float: none;
+		margin: 10px auto;
+		width: 100%;
+	}
+}

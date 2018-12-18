@@ -1,0 +1,467 @@
+@font-face {
+    font-family: superstarX;
+    src: url(../fonts/SuperstarX.ttf);
+}
+body, html{
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+}
+.go-to-top-btn{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	width: 30px;
+	height: 30px;
+	z-index: 1001;
+	font-size: 30px;
+	opacity: .5;
+}
+.go-to-top-btn:hover{
+	opacity: 1;
+}
+.navbar{
+	margin-bottom: 0;
+	border-radius: 0;
+	height: 5%;
+	background-color: #fff;
+	color: #fff;
+	font-weight: bold;	
+}
+.navbar-inverse{background-color: #fff;}
+.navbar-inverse .navbar-nav>li>a{color: #909295;}
+.navbar-inverse .navbar-nav>li>a:focus{color: #171b20;}
+.navbar-inverse .navbar-nav>li>a:hover{color: #171b20;}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #171b20;
+  background-color: #fff;
+}
+.navbar-inverse {
+    border-color: #fff;
+}
+.navbar-toggle{
+	background-color: #333;
+}
+.in, .collapsing{
+    border-color: #101010;
+    background-color: #eaeaea;
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    color: #171b20;
+    background-color: inherit;
+}
+.navbar-custom{
+	display: inline-flex;
+}
+ul.navbar-custom li{
+	padding-left: 20px;
+	padding-top: 15px;
+	color: #9d9d9d;
+	list-style: none;
+}
+ul.navbar-custom li a{
+	color: #9d9d9d;
+	text-decoration:none;
+}
+/******Main section*******/
+.main-section{
+	height: 95%;
+	position: relative;
+	background-color: #fff;
+	margin-top: 50px;
+}
+.main-section .slideshow{
+	height: auto;
+	background-color: #fff;
+}
+.main-section .slideshow img{
+	height: auto;
+	width: 100%;
+	background-color: #fff;
+}
+.main-section .intro-text{
+	height: 50%;
+	text-align: center;
+	padding: 1% 10%;
+}
+.superstarX{
+	font-family: superstarX;
+}
+.next-section-btn{
+	position: absolute;	
+	left: 50%;
+	bottom: 30px;
+}
+.cont-btn a{
+	color: #2c68c9
+}
+.next-section-btn .cont-btn{
+	position: relative;
+	left: -50%;
+	width: 40px;
+	height: 40px;
+	border: solid 2px #2c68c9;
+	border-radius: 50%;
+	text-align: center;
+	padding-top: 3px;
+	color: #2c68c9;
+    font-size: 20px;
+}
+/*******Ends main section*********/
+
+/********Plans section*********/
+.plans-section{
+	width: 100%;
+	background-color: #171b20;
+}
+.plans-section .benefits{
+	height: 255px;
+	background: url('../img/beneficios.png') no-repeat right;
+	background-size: auto 100%;
+	background-color: #eaeaea;
+	padding: 0 0 0 25px;
+	color: #000;
+    font-weight: bold;
+}
+.plans-section .benefits .benefits-text {
+    margin-top: 2%;
+}
+.plans-section .benefits ul li{
+	padding-top: 15px;
+}
+.plans-section .benefits .benefits-img{
+    padding: 0;
+}
+.plans-section .benefits .benefits-img img{
+    width: 100%;
+}
+.plans-section .plans{
+	background-color: #171b20;
+	height: 200px;
+	color: #fff;
+}
+.plans .plan-item{
+	width: 100px;
+    height: 100px;
+    background-color: #171b20;
+    margin: 5% auto 5%;
+	cursor: pointer;
+}
+.prim-img img, .sec-img img, .bach-img img{
+	width: 100%;
+	border-radius: 50%;
+}
+.plans .prim-img{background: url('../img/Asset1.png') no-repeat center}
+.plans .sec-img{background: url('../img/Asset2.png') no-repeat center}
+.plans .bach-img{background: url('../img/Asset3.png')no-repeat center}
+
+.plans .prim-img:hover{background: url('../img/hoverAsset1.png') no-repeat center}
+.plans .sec-img:hover{background: url('../img/hoverAsset2.png') no-repeat center}
+.plans .bach-img:hover{background: url('../img/hoverAsset3.png')no-repeat center}
+
+.plans p{
+	text-align: center;
+	font-weight: bold;
+}
+.plans-btn{
+	border-color: #fff;
+}
+.plans-btn i{
+	color: #fff;
+}
+/********Ends plan section*******/
+
+/*******Pack section*******/
+.next-pack-btn {
+    position: absolute;
+    top: 35px;
+    right: 28px;
+}
+.pack-section{
+	padding: 0 40px 20px 40px;
+	height: auto;
+	display: table;
+	width: 100%;
+}
+.pack-section .grid{text-align: inherit;}
+.primaria, .secundaria, .bach{
+	height: auto;
+}
+.pack-section .grid ul{
+    padding: 0;
+	clear: both;
+	padding-top: 10px;
+	position: relative;
+}
+.pack-section .grid ul li{
+    list-style: none;
+	margin-top: 20px;
+	text-align: center
+}
+.grid h3{
+	text-align: left;
+	padding-left: 6%;
+	clear: both;
+}
+.grid figure{
+	height: 200px;
+	font-size: 1em;
+}
+.grid{
+	font-size: 1em;
+}
+.effect-ming{
+	margin: 0 auto!important;
+	width: 95%!important;
+	min-width: 100%!important;
+}
+.grid .effect-ming img{
+	width: 100%;
+}
+.effect-ming h2{
+	opacity: 0;
+}
+.pack-img-title{
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+    right: 0;
+}
+/*******Ends pack section*******/
+
+/*******Custom button section********/
+.custom-btn-section{
+	background-color: #909295;
+    height: 20%;
+	position: relative;
+}
+.custom-btn-wrapper{
+	position: absolute;
+	left: 50%;
+	top: 40%;
+}
+.custom-btn-section .btn{
+	background-color: #2c68c9;
+	position: relative;
+	left: -50%;
+	color: #fff;
+}
+/*******Ends custom button section********/
+
+/**********Form section************/
+.form-section{
+	background-color: #171b20;
+	padding: 30px 48px;
+	height: 50%;
+	text-align: center;
+}
+.form-section h3{
+	text-align: center;
+	color: #fff;
+	margin-bottom: 30px;
+}
+.form-section input{	    
+	height: 34px;
+    width: 100%;
+}
+.form-section textarea{
+	width: 100%;
+}
+.form-section .btn{	    
+	margin-top: 20px;
+}
+/**********Ends form section********/
+
+/******Calc section******/
+.body{
+	display: inline-flex;
+	width:100%;
+}
+.body ul{
+	list-style: none;
+}
+.body p{
+	font-size: 15px;
+	padding-top: 3px;
+}
+.body span{
+	padding: 0 8px;
+	cursor: pointer;
+	font-size: 20px;
+}
+.modal-content{
+	height: auto!important;	
+}
+.modal-dialog .modal-content .modal-header{
+	background-color: #2c68c9;
+	color: #fff;
+}
+.modal-dialog .modal-content .modal-header .close{
+	position: absolute;
+    top: 16px;
+    right: 14px;
+}
+#customizeModal .modal-dialog .modal-content .modal-body{
+    width: 100%;
+}
+#customizeModal .modal-footer{
+    background-color: #eaeaea;
+	text-align: center;
+	padding-top: 0;
+}
+#customizeModal .modal-footer .btn{
+	background-color: #2c68c9;
+	color: #fff;
+	margin-top: 20px;
+}
+#customizeModal .pack-item{
+    margin-top: 10px;
+}
+#customizeModal .pack-item-title{
+	background-color: #eaeaea;
+	padding: 10px;
+	position: relative;
+}
+#customizeModal .pack-item-body{
+	background-color: #f1f1f1;
+    padding: 10px;
+    justify-content: center;
+    display: inline-flex;
+    width: 100%;
+}
+#customizeModal ul.product-list{
+	padding: 0;
+	text-align: left
+}
+#customizeModal ul.product-list li.item-list{
+	list-style: none;
+    margin-top: 13px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: inline-block;
+    width: 49%;
+    text-align: left;
+}
+.moreless-btn {
+	display: inline-flex;
+	justify-content: center;
+	width: 40px;
+    height: 40px;
+	border-radius: 50%;
+	background-color: #2c68c9;
+	color: #fff;
+	font-size: 20px;	
+	cursor: pointer;
+}
+.moreless-btn:hover {
+	background-color: #2355a5;
+}
+.number, .total{
+	font-size: 25px;
+}
+.total{
+	position: absolute;
+    right: 10px;
+    top: 3px;
+}
+.number{
+	padding-left: 15px;
+    padding-right: 15px;
+}
+.less{
+    padding-top: 3px;
+}
+.less::after{
+	content: '-';
+}
+.more{
+    padding-top: 5px;
+}
+.more::after{
+	content: '+';
+}
+/***********Detail modal**************/
+.pack-detail-item{
+	list-style: none;
+}
+.pack-detail-item .video-space{
+	height: 200px;
+	width: 100%;
+	background-color: #000;
+}
+ul.pack-detail{
+	padding: 0 40px 40px;
+}
+ul.pack-detail p{
+	margin-top: 10px;
+}
+ul.pack-detail li.pack-detail-item{
+	margin-top: 20px;
+}
+ul.pack-detail li.pack-detail-item h4{
+	text-align: center;
+}
+#detailModal .modal-footer .btn{
+	background-color: #2c68c9;
+	color:#fff;
+}
+#detailModal .modal-footer{
+	text-align: center
+}
+.modal-content .modal-footer{
+	width: 100%;
+	background-color: #fff;
+}
+/*******ends detail modal******/
+@media only screen and (max-width : 480px) {
+	ul.benefits-list {
+		font-size: 13px;
+		padding: 0;
+	}
+	ul.benefits-list li{
+		list-style: none;
+	}
+	.plans-section .plans {
+		width: 100%;
+		height: auto;
+	}
+	.plans-col{
+		margin: 0 auto;
+	}	
+	ul.pack-detail{
+		padding: 0;
+	}
+	.pack-detail-item .video-space {
+		height: 135px;
+	}
+	#customizeModal ul.product-list li.item-list {
+		width: 100%;
+	}
+	.form-section textarea{
+		margin-top: 30px;
+	}
+	.grid h3 {
+		padding-left: 0;
+	}
+	.grid ul li{
+		padding: 0;
+	}
+	#customizeModal .modal-footer h2{
+		font-size: 20px;
+	}
+	.form-section {
+		padding: 30px 20px;
+	}
+}
+@media only screen and (max-width : 768px) {
+	.form-section {
+		height: auto;
+	}
+	.plans-section .plans{
+		background-color: #171b20;
+		height: auto;
+		color: #fff;
+	}
+}
